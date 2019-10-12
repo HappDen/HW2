@@ -1,13 +1,9 @@
-import math
-a = int(input())
-b = 0
-domag2 = 0
-domag1 = 0
-while b < a:
-    domag1 = int(input("celoe "))
-    domag2 += domag1/int(input("dr "))
-    print(domag2)
-    b = b + 1
-
-print(domag2,"/100")
-
+n, d = 0, 1
+for i in range(int(input())):
+    a, b = int(input()), int(input())
+    n = n * b + a * d
+    d *= b
+x, y = n, d
+while y > 0:
+    x, y = y, x % y
+print(n // x, '/', d // x, sep='')
