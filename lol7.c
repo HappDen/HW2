@@ -33,5 +33,9 @@ int main()
     {
         x = (-1*b) / (2*a);
         cout << "X1:" << x << endl;
-    } 
+    }
+    else if (discr < 0)
+    {
+        cout << " " <<endl;
+    }
 }
