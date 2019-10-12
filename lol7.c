@@ -8,6 +8,7 @@ int main()
     double b;
     double c;
     double x;
+    double x1;
     double discr;
     cin >> a;
     cin >> b;
@@ -25,9 +26,8 @@ int main()
     else if(discr > 0)
     {
         x = ( -1*b + sqrt(b*b - 4*a*c) ) / (2 * a);
-        cout << "X1:" << x << endl;
-        x = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
-        cout << "X2:" << x << endl;
+        x1 = ( -1*b - sqrt(b*b - 4*a*c) ) / (2 * a);
+        cout << "X1:" << x << " X2:" << x1 << endl;
     }
     else if (discr == 0)
     {
