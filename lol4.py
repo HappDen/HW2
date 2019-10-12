@@ -14,7 +14,9 @@ m = int(input())
 n = int(input())
 o = int(input())
 p = int(input())
-if a+b+c+d+e+f+g+h == i+j+k+l+m+n+o+p:
+if a == i or b == j or c == k or d == l or e == m or f == n or g == o or h == p:
+    print ("YES")
+elif a+b+c+d+e+f+g+h == i+j+k+l+m+n+o+p:
     print ("NO")
 else:
     print("YES")
